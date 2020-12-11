@@ -1,0 +1,30 @@
+
+    # Definimos el grupo con la directiva upstream
+    # Grupo de servidores --- frontend ---
+upstream frontend {
+        # No se especifica ningún método de balanceo de carga para el Round Robin
+
+        # Conexiones mínimas - Se envía una solicitud al servidor con el menor número de conexiones activas
+        # least_conn;
+
+        #  Menor tiempo - Para cada solicitud, NGINX Plus selecciona el servidor con la latencia media más baja y el menor número de conexiones activas
+        # least_time header;
+
+        # Aleatorio - Cada petición será pasada a un servidor seleccionado al azar.
+        # random two least_time=last_byte;
+
+        # Le decimos los servidores de los cuales queremos que haga el balanceo de carga
+        server  172.31.30.26;
+        server  172.31.85.178;
+        # Si uno de los servidores necesita ser removido temporalmente de la rotación de balanceo de carga, puede ser marcado con el parámetro down
+        # server  10.0.0.1:8002 down;
+    }
+
+server {
+   listen 80;
+
+   location / {
+       # Definimos el nombre del proxy para pasar solicitudes
+      proxy_pass http://frontend;
+   }
+}
