@@ -1,13 +1,5 @@
 # iaw-practica-07
-<ul>
-<li><a href="#práctica-7-balanceador-de-carga-con-nginx"><span class="toc-section-number">1</span> Práctica 7: Balanceador de carga con Nginx</a><ul>
-<li><a href="#requisitos"><span class="toc-section-number">1.1</span> Requisitos</a></li>
-<li><a href="#entregables"><span class="toc-section-number">1.2</span> Entregables</a></li>
-</ul></li>
-<li><a href="#referencias"><span class="toc-section-number">2</span> Referencias</a></li>
-<li><a href="#licencia"><span class="toc-section-number">3</span> Licencia</a></li>
-</ul>
-</nav>
+
 
 <h1 id="práctica-7-balanceador-de-carga-con-nginx"><span class="header-section-number">1</span> Práctica 7: Balanceador de carga con Nginx</h1>
 <p>En esta práctica vamos a configurar <a href="https://nginx.org">Nginx</a> para que trabaje como un <a href="https://es.wikipedia.org/wiki/Balanceador_de_carga">balanceador de carga</a>. Se recomienda la lectura del artículo <a href="https://www.nginx.com/resources/admin-guide/load-balancer/">Nginx Load Balancing - HTTP Load Balancer</a>.</p>
