@@ -17,7 +17,7 @@
 <li>El balanceador y los dos frontales tendrán instalado el servidor <a href="https://nginx.org">Nginx</a>.</li>
 <li>Las dos máquinas que actúan como frontales web tendrán que estar configuradas para servir páginas PHP.</li>
 <li>Utilice <strong>máquinas virtuales EC2</strong> de <strong>Amazon Web Services (AWS)</strong>, con la última versión de <strong>Ubuntu Server</strong>.</li>
-<li>para comprobar dentro de /var/www/html/.. lo modificamos  // <p class="lead">jesus1</p> // y hacmos un sudo systemctl restart nginx</li>
+<li>para comprobar dentro de /var/www/html/.. lo modificamos  <-p class="lead">jesus1<-/p>  y hacmos un sudo systemctl restart nginx</li>
 </ul>
 <p>Necesitará crear cuatro máquinas virtuales:</p>
 <ul>
